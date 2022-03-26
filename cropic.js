@@ -1,8 +1,5 @@
 /*************************
- * Croppie
- * Copyright 2016
- * Foliotek
- * Version: 2.4.1
+ * Cropic
  *************************/
 let activeCroppie;
 (function (root, factory) {
