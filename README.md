@@ -8,4 +8,4 @@ Choose images and crop it.
 &lt;script src="https://cdn.jsdelivr.net/gh/fedbytes/cropic@main/cropic.js"&gt; &lt;/script&gt;<copy-button target-text="<script src='https://cdn.jsdelivr.net/gh/fedbytes/cropic@main/cropic.js'></script>">Copy</copy-button>
 <br><br>
 <b>Usage</b><br>
-&lt;script&gt; <br>&emsp; $('#img').cropic(); //Use your &lt;img&gt; element reference here <br>&lt;/script&gt;
+&lt;script&gt; <br>&emsp; $('#img').cropic(); &emsp; //Use your &lt;img&gt; selector here <br>&lt;/script&gt;
