@@ -1472,10 +1472,13 @@ $(document).ready(function(){
     })
 });
 
-$.fn.cropic = function () {
+$.fn.cropic = function (callback) {
     var object = $(this)[0];
     object.__construct = function () {
-        $(this).addClass('croppie_pic')
+        $(this).addClass('croppie_pic');
+        if(callback){
+            $(this).on("load",callback)
+        }
     }
     object.__construct();
 }
