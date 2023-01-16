@@ -1407,7 +1407,7 @@ let activeCroppie;
 
 
 $(document).ready(function(){    
-    $("body").append('<div class="modal fade def-style" id="croppieModal" tabindex="-1" role="dialog" aria-labelledby="croppieModal" aria-hidden="true">'+
+    $("body").append('<div class="modal fade def-style" id="croppieModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">'+
     '<div class="modal-dialog">'+
         '<div class="modal-content">'+
             '<b class="mb-20">Set Image</b>'+
@@ -1467,9 +1467,7 @@ $(document).ready(function(){
 	})
     $(document).on("click",".croppie_pic",function(){
         activeCroppie=$(this);
-        $("#croppieModal").modal({
-            backdrop: false
-        });
+        $('#croppieModal').modal('show');
         $('#box-image').trigger('click');
     })
 });
